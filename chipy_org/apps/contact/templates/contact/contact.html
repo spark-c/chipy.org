@@ -19,9 +19,7 @@
                     </table>
                     <div class="text-center">
                         <input class="btn btn-primary" type="submit" value="Send Email">
-                        <!-- <input class="btn btn-primary" type="submit" value="Send Email" data-bs-toggle="modal" data-bs-target="#contact-modal"> -->
                     </div>
-                    <div id="contact-modal-show" style="display:none" data-bs-toggle="modal" data-bs-target="#contact-modal"></div>
                   </form>
                 </div>
               </div>
@@ -40,6 +38,8 @@
     
     {% if messages %}
       <!-- CONTACT MODAL STARTS-->
+      <div id="contact-modal-show" style="display:none" data-bs-toggle="modal" data-bs-target="#contact-modal"></div>
+      
       <div class="modal fade" id="contact-modal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
