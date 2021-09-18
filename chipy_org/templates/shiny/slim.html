@@ -18,8 +18,12 @@
 {% block content %}
 
 <!-- Renders message box unless View declares message_as_modal instead -->
-{% if messages and not message_as_modal %}
-    {% include "_messages.html" %}
+{% if messages %}
+    {% if message_as_modal %}
+        {% include "_modal.html" %}
+    {% else %}
+        {% include "_messages.html" %}
+    {% endif %}
 {% endif %}
 
 <div class="container-xl">
